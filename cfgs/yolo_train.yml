@@ -28,7 +28,7 @@ decay_step: 20
 use_cuda: True
 n_iter: 0
 start_epoch: 0
-start_from: 'save/tl2/mobilenetv2/'
+start_from: ' '
 load_best_score: 0
 display_interval: 5
 seen: 0

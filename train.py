@@ -242,8 +242,10 @@ class Train(object):
     def checkpoint_save(self, infos, epoch, best_val_loss, best_flag=False):
 
         checkpoint_path = os.path.join(self.args.save_path, self.args.backbones_network)
+
         if not os.path.exists(checkpoint_path):
             os.makedirs(checkpoint_path)
+
         if self.args.mGPUs > 1:
             torch.save(self.model.module.state_dict(), os.path.join(checkpoint_path, 'model.pth'))
         else:

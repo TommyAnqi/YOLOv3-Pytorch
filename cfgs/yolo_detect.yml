@@ -2,16 +2,12 @@ backbones_network: 'mobilenetv2'
 weightfile: ''
 
 # general setting:
-batch_size: 10
-max_epochs: 60
-num_workers: 10
-val_split: 0.1
 
 output_dir: outputs/
 save_interval: 5
 save_path: save/
 dir_logs: logs/
-inference_path: save/tl2/mobilenetv2/model.pth
+inference_path: save/tl2/mobilenetv2/model-best.pth
 height: 416
 width: 416
 seed: 123
