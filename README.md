@@ -19,10 +19,7 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
     ...
     ```
 
-2. Make sure you have run `python convert.py -w yolov3.cfg yolov3.weights model_data/yolo_weights.h5`  
-    The file model_data/yolo_weights.h5 is used to load pretrained weights.
-
-3. Modify yolo_train.yml and start training.  
+2. Modify yolo_train.yml and start training.  
     `python train.py`  
     Use your trained weights or checkpoint weights with command line option `--model model_file` when using yolo_video.py
     Remember to modify class path or anchor path, with `--classes class_file` and `--anchors anchor_file`.
@@ -32,14 +29,28 @@ If you want to use original pretrained weights for YOLOv3:
 ---
 ## Inference
 
+---
 ## Todo list:
 - [x] Training  
-- [x] Multiscale-training
-- [x] mobilnetv2 backends
-- [ ] Multiscale-testing 
-- [ ] soft-nms
+- [x] Multiscale training
+- [x] Mobilnetv2 backends
+- [ ] Multiscale testing 
+- [ ] Soft-nms
 - [ ] Multiple-GPU training
 - [ ] mAP Evaluation
+
+
+
+---
+## Requirements
+- Python 3.6
+- Pytorch 0.4.0
+- TensorboardX
+- Cuda 9.0 or higher
+
+
+---
+
 ## Citation
 - [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3), developed based on Keras + Numpy
 - [BobLiu20/YOLOv3_PyTorch](https://github.com/BobLiu20/YOLOv3_PyTorch), Pytorch + Numpy, load pytorch pretrained model, loss does not converge now.
