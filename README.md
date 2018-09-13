@@ -1,7 +1,7 @@
 # YOLOv3-Pytorch
 PyTorch implementation of YOLOv3, including training and inference based on darknet and mobilnetv2
 ## Introduction
-The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf), which is extremely fast and accurate has been released. The aim of this project is to replicate the [Darknet](https://github.com/pjreddie/darknet) implementation. It also supports training YOLOv3 network with various backends such as MobileNetv2, Darknet(53 or 21).
+The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOLOv3: An Incremental Improvement](https://pjreddie.com/media/files/papers/YOLOv3.pdf), which is extremely fast and accurate has been released. The aim of this project is to replicate the [Darknet](https://github.com/pjreddie/darknet) implementation. It also supports training YOLOv3 network with various backends such as MobileNetv2, Darknet(53 or 21). If you have any question or idea about this repo, make comments or email to anqitommy@gmail.com
 
 
 ---
@@ -27,7 +27,7 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
 
 3. Modify yolo_train.yml and start training.  
     `python train.py`  
-    Use your trained weights or checkpoint weights with command line option `--model model_file` when using yolo_video.py
+    Use your trained weights or checkpoint weights in *yolo_train.yml* with command line option `--model model_file` when using yolo_video.py
     Remember to modify class path or anchor path, with `--classes class_file` and `--anchors anchor_file`.
 
 If you want to use original pretrained weights for YOLOv3:  
