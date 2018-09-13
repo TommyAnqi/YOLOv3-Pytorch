@@ -56,5 +56,6 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
 ---
 
 ## Citation
-- [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3), developed based on Keras + Numpy
-- [BobLiu20/YOLOv3_PyTorch](https://github.com/BobLiu20/YOLOv3_PyTorch), Pytorch + Numpy, load pytorch pretrained model, loss does not converge now.
+- [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3)
+- [BobLiu20/YOLOv3_PyTorch](https://github.com/BobLiu20/YOLOv3_PyTorch)
+- [xiaochus/MobileNetV2](https://github.com/xiaochus/MobileNetV2)
