@@ -1,0 +1,26 @@
+backbones_network: 'mobilenetv2' 
+weightfile: ''
+
+# general setting:
+batch_size: 10
+max_epochs: 60
+num_workers: 10
+val_split: 0.1
+
+output_dir: outputs/
+save_interval: 5
+save_path: save/
+dir_logs: logs/
+inference_path: save/tl2/mobilenetv2/model.pth
+height: 416
+width: 416
+seed: 123
+
+# loading options.
+use_cuda: True
+
+anchors: [[10, 13], [16, 30], [33, 23],
+          [30, 61], [62, 45], [59, 119],
+          [116, 90], [156, 198], [373, 326]]
+classes_names: ['g', 'r', 'y', 'n']
+use_all_gt: False

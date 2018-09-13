@@ -1,0 +1,39 @@
+backbones_network: 'mobilenetv2' 
+weightfile: ''
+annotation_path: 'cfgs/train_TL_NI_mixed_crop_07092.txt'
+
+# general setting:
+batch_size: 10
+max_epochs: 100
+val_split: 0.1
+
+output_dir: outputs/
+save_interval: 5
+save_path: save/tl2/
+dir_logs: logs/
+height: 416
+width: 416
+seed: 123
+
+# optimization:
+optimizer: 'adam'
+backbone_lr: 0.0000001
+lr: 0.0000001
+
+weight_decay: 0
+decay_gamma: 0.1
+decay_step: 20
+
+# loading options.
+use_cuda: True
+n_iter: 0
+start_epoch: 0
+start_from: 'save/tl2/mobilenetv2/'
+load_best_score: 0
+display_interval: 5
+seen: 0
+anchors: [[10, 13], [16, 30], [33, 23],
+          [30, 61], [62, 45], [59, 119],
+          [116, 90], [156, 198], [373, 326]]
+classes_names: ['g', 'r', 'y', 'n']
+use_all_gt: False
