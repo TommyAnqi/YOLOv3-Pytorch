@@ -32,11 +32,7 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
 If you want to use original pretrained weights for YOLOv3:  
 
 ---
-## Inference
-1. Modify yolo_detect.yml and start detection.
-`python detect.py`
 
----
 ## Todo list:
 - [x] Training  
 - [x] Multiscale training
