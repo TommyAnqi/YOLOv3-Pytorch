@@ -23,14 +23,14 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
     path/to/img2.jpg 120,300,250,600,2
     ...
     ```
-2. Download YOLOv3 darknet53 backbone weights from [BaiduDisk](https://pan.baidu.com/s/1N3jN6imnsbsquk04J2G_-Q), password:w6fm.
+2. If you want to use original pretrained weights for YOLOv3:  
+    Download YOLOv3 darknet53 backbone weights from [BaiduDisk](https://pan.baidu.com/s/1N3jN6imnsbsquk04J2G_-Q), password:w6fm.
 
 3. Modify yolo_train.yml and start training.  
     `python train.py`  
-    Use your trained weights or checkpoint weights in *yolo_train.yml* with command line option `--model model_file` when using yolo_video.py
-    Remember to modify class path or anchor path, with `--classes class_file` and `--anchors anchor_file`.
+    Use your trained weights or checkpoint weights, modify the training parameters and pre-trained weights in **yolo_train.yml**, 
+    **Remember to modify the annotation_path of your own annotation file, class_names and anchors.**
 
-If you want to use original pretrained weights for YOLOv3:  
 
 ---
 
@@ -42,7 +42,7 @@ If you want to use original pretrained weights for YOLOv3:
 - [ ] Soft-nms
 - [ ] Multiple-GPU training
 - [ ] mAP Evaluation
-
+- [ ] Extend to YOLO-FCN
 
 
 ---
