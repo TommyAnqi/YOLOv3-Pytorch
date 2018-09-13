@@ -28,8 +28,8 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
 
 3. Modify yolo_train.yml and start training.  
     `python train.py`  
-    Use your trained weights or checkpoint weights, modify the training parameters and pre-trained weights in **yolo_train.yml**, 
-    **Remember to modify the annotation_path of your own annotation file, class_names and anchors.**
+    Use your trained weights or checkpoint weights, modify the training parameters and weightfile in yolo_train.yml, 
+    Remember to modify the annotation_path of your own annotation file, class_names and anchors.
 
 
 ---
