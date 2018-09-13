@@ -6,6 +6,9 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
 
 ---
 ## Quick Start
+1. Download YOLOv3 darknet53 weights from [BaiduDisk, password:w6fm](链接：https://pan.baidu.com/s/1N3jN6imnsbsquk04J2G_-Q).
+2. Download YOLOv3 mobilenetv2 weights from [BaiduDisk, password:j7oz](https://pan.baidu.com/s/15SS5CtdXcIRzSwdB4w0h3Q)
+3. Run detect.py with the test_img.png.
 
 ## Training
 1. Generate your own annotation file and class names file.  
