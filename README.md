@@ -29,7 +29,7 @@ The YOLO is one of the most popular one stage object detector. In Mar 2018, [YOL
 3. Modify yolo_train.yml and start training.  
     `python train.py`  
     Use your trained weights or checkpoint weights, modify the training parameters, weightfile in yolo_train.yml, 
-    Remember to modify the annotation_path of your own annotation file, class_names, anchors, save_path.
+    Remember to modify the annotation_path of your own annotation file, class_names, anchors, save_path. If you want to use mobilnetv2       as the backbone net, modify the `backbones_network`
 
 
 ---
