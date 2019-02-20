@@ -15,7 +15,8 @@ class yolo_detect(object):
         self.model_image_size = (args.height, args.width)
         self.class_names = self.args.classes_names
         self.model = self.creat_model()
-
+        self.model.eval()
+        
     def creat_model(self):
         model_path = self.args.inference_path
         model = yolo_layer.yolov3layer(self.args)
@@ -45,7 +46,7 @@ class yolo_detect(object):
         time_crop_img_e = time.time()
         print('Time consuming of image crop:', time_crop_img_e - time_crop_img_s)
         time_inference_s = time.time()
-        image_data = np.array(boxed_image, dtype='float32')
+        image_data = np.array(boxed_image, dtype='float32') / 255.0
         img = torch.from_numpy(image_data).float().cuda()
         img = img.unsqueeze(0)
         img = img.view(img.shape[0], img.shape[1], img.shape[2], img.shape[3]).permute(0, 3, 1, 2).contiguous()
